@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mój Prąd</title>
+</head>
+<body>
+
+<h2>APLIKACJA MOJ PRĄD</h2>
+<h3>Panel użytkownika - Zmiana Hasła</h3>
+
+<hr>
+
+<form action="changePassw" modelAttribute="passwordModel">
+    <input type="text" placeholder="Nowe Hasło" th:field="*{passwordModel.pass}" >
+    <br><br>
+    <input type="text" placeholder="Powtórz Haslo" th:field="*{passwordModel.passw2}" >
+    <br><br>
+    <input type="submit" value="Zmień hasło"/>
+</form>
+
+<br>
+<hr>
+<a href="/uzytkownik">Powrót</a>
+<br><br>
+<a href="/logout">Wyloguj</a>
+
+</body>
+
+</html>

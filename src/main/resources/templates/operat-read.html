@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mój Prąd</title>
+</head>
+<body>
+
+<h2>APLIKACJA MOJ PRĄD</h2>
+<h3>Panel operatora - Odczyt licznika</h3>
+
+<hr>
+
+<form action="addRead" modelAttribute="meter">
+    <input type="text"  th:field="*{meter.id}" > ID Licznika
+    <br><br>
+    <input type="text"  th:field="*{meter.value}"> Stan Licznika
+    <br><br>
+    <br><br>
+    <input type="submit" value="Dodaj"/>
+</form>
+
+<br>
+<hr>
+<a href="/operator">Powrót</a>
+<br><br>
+<a href="/logout">Wyloguj</a>
+
+</body>
+</html>

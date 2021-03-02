@@ -1,0 +1,5 @@
+com\company\controller\AdminControllerTest.class
+com\company\session\SessionObjectTest.class
+com\company\controller\OperatControllerTest.class
+com\company\controller\LoginControllerTest.class
+com\company\controller\UserControllerTest.class
